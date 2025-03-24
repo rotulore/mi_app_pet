@@ -34,7 +34,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="login-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+    <div className="login-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '65vh' }}>
       <div style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '8px', width: '300px' }}>
         <h2 style={{ textAlign: 'center' }}>Iniciar sesión</h2>
         <form onSubmit={handleLogin}>
@@ -44,7 +44,7 @@ export default function LoginPage() {
               type="email" 
               id="email" 
               placeholder="Escribe tu correo" 
-              style={{ width: '100%', padding: '8px', marginTop: '5px' }} 
+              style={{ width: '93%', padding: '8px', marginTop: '5px' }} 
               value={email} 
               onChange={(e) => setEmail(e.target.value)} 
             />
@@ -55,12 +55,12 @@ export default function LoginPage() {
               type="password" 
               id="password" 
               placeholder="Escribe tu contraseña" 
-              style={{ width: '100%', padding: '8px', marginTop: '5px' }} 
+              style={{ width: '93%', padding: '8px', marginTop: '5px' }} 
               value={password} 
               onChange={(e) => setPassword(e.target.value)} 
             />
           </div>
-          <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: '#000', color: 'white', border: 'none', borderRadius: '4px' }}>
+          <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: '#634AFF', color: 'white', border: 'none', borderRadius: '4px' }}>
             Iniciar sesión
           </button>
         </form>
