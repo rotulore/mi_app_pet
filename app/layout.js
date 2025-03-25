@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
               display: flex;
               justify-content: space-between;
               align-items: center;
-              background-color: #333;
-              color: white;
-              padding: 10px 20px;
+              background-color:rgb(255, 255, 255);
+              color:rgb(0, 0, 0);
+              padding: 35px 20px;
             }
 
             nav h1 {
@@ -36,27 +36,26 @@ export default function RootLayout({ children }) {
             }
 
             nav ul li a {
-              color: white;
+              color:rgb(0, 0, 0);
               text-decoration: none;
-              font-size: 16px;
+              font-size: 20px;
             }
 
             nav ul li a:hover {
-              text-decoration: underline;
+              color:#634AFF;
             }
           `}
         </style>
       </head>
       <body>
         <nav>
-          <h1>My Pet</h1>
+          <h1>Rescata un Amigo</h1>
           <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/accesos/login">Login</Link></li>
-            <li><Link href="/accesos/register">Register</Link></li>
+            <li><Link href="/">Inicio</Link></li>
+            <li><Link href="/accesos/login">Iniciar sesión</Link></li>
+            <li><Link href="/accesos/register">Registrarse</Link></li>
           </ul>
         </nav>
-        
         {children}
       </body>
     </html>

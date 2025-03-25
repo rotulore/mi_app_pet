@@ -40,7 +40,7 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="register-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+    <div className="register-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '65vh' }}>
       <div style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '8px', width: '300px' }}>
         <h2 style={{ textAlign: 'center' }}>Crear cuenta</h2>
         <form onSubmit={handleRegister}>
@@ -50,7 +50,7 @@ export default function RegisterPage() {
               type="email" 
               id="email" 
               placeholder="Escribe tu correo" 
-              style={{ width: '100%', padding: '8px', marginTop: '5px' }} 
+              style={{ width: '93%', padding: '8px', marginTop: '5px' }} 
               value={email} 
               onChange={(e) => setEmail(e.target.value)} 
             />
@@ -61,7 +61,7 @@ export default function RegisterPage() {
               type="password" 
               id="password" 
               placeholder="Crea una contraseña" 
-              style={{ width: '100%', padding: '8px', marginTop: '5px' }} 
+              style={{ width: '93%', padding: '8px', marginTop: '5px' }} 
               value={password} 
               onChange={(e) => setPassword(e.target.value)} 
             />
@@ -72,12 +72,12 @@ export default function RegisterPage() {
               type="password" 
               id="confirmPassword" 
               placeholder="Confirma tu contraseña" 
-              style={{ width: '100%', padding: '8px', marginTop: '5px' }} 
+              style={{ width: '93%', padding: '8px', marginTop: '5px' }} 
               value={confirmPassword} 
               onChange={(e) => setConfirmPassword(e.target.value)} 
             />
           </div>
-          <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: '#000', color: 'white', border: 'none', borderRadius: '4px' }}>
+          <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: '#634AFF', color: 'white', border: 'none', borderRadius: '4px' }}>
             Registrarse
           </button>
         </form>
